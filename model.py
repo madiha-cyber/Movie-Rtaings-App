@@ -74,12 +74,6 @@ def connect_to_db(flask_app, db_uri='postgresql:///ratings', echo=True):
     print('Connected to the db!')
 
 
-
-
-
-
-
-
 if __name__ == '__main__':
     from server import app
 
@@ -89,4 +83,4 @@ if __name__ == '__main__':
 
     connect_to_db(app)
 
-    db.create_all()
+    # db.create_all()
